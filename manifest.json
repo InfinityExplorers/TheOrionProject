@@ -1,0 +1,69 @@
+{
+  "minecraft": {
+    "version": "1.12.2",
+    "modLoaders": [
+      {
+        "id": "forge-14.23.5.2859",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "The Orion project",
+  "version": "76",
+  "author": "StarL0stGaming",
+  "files": [
+    {
+      "projectID": 557549,
+      "fileID": 4506796,
+      "required": true
+    },
+    {
+      "projectID": 557242,
+      "fileID": 4483462,
+      "required": true
+    },
+    {
+      "projectID": 564858,
+      "fileID": 4483468,
+      "required": true
+    },
+    {
+      "projectID": 570458,
+      "fileID": 4505114,
+      "required": true
+    },
+    {
+      "projectID": 687577,
+      "fileID": 4487379,
+      "required": true
+    },
+    {
+      "projectID": 419286,
+      "fileID": 4459218,
+      "required": true
+    },
+    {
+      "projectID": 261348,
+      "fileID": 3143349,
+      "required": true
+    },
+    {
+      "projectID": 242818,
+      "fileID": 2779848,
+      "required": true
+    },
+    {
+      "projectID": 460609,
+      "fileID": 4140230,
+      "required": true
+    },
+    {
+      "projectID": 620262,
+      "fileID": 3909215,
+      "required": true
+    }
+  ],
+  "overrides": "overrides"
+}

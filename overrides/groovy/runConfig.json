@@ -1,0 +1,17 @@
+{
+  "packName": "The Orion Project",
+  "packId": "theorionproject",
+  "version": "0.0.1",
+  "debug": false,
+  "classes": [
+
+  ],
+  "loaders": {
+    "preInit": [
+      "preInit/"
+    ],
+    "postInit": [
+      "postInit/"
+    ]
+  }
+}
