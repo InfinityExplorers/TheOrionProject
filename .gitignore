@@ -1,4 +1,12 @@
 *.jar
+groovy.log
+minecraftinstance.json
+options.txt
+
 
 /.idea
 /lib
+/saves
+/logs
+/.mixin.out
+/resourcepacks
