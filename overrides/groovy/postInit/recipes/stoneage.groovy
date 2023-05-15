@@ -51,6 +51,9 @@ crafting.addShapeless('planks_4', jungle_planks * 2, [jungle_logs])
 crafting.addShapeless('planks_5', acacia_planks * 2, [acacia_logs])
 crafting.addShapeless('planks_6', dark_oak_planks * 2, [dark_oak_logs])
 
+//clay block to clay
+crafting.addShapeless('clayball4x', item('minecraft:clay_ball') * 4, [item('minecraft:clay')])
+
 
 //GregTech
 

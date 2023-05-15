@@ -6,7 +6,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Welcome! How\u0027s your day?",
+          "desc:8": "Welcome! How\u0027s your day?\n\nDue to the \"No Tree Punching\" mod being in this pack, you will need to use different means to gather the resources needed to get your first tools.\n\nGo break some leaves for sticks and some gravel for flint.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37,7 +37,31 @@
           "rewards:9": {}
         }
       },
-      "tasks:9": {}
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:stick"
+            },
+            "1:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:flint"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
     "1:10": {
       "preRequisites:11": [
@@ -46,19 +70,19 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "It\u0027s gathering time!",
+          "desc:8": "Wooden and Stone tools don\u0027t exist in this pack, but flint ones do.\n\nWhile crouching, right click some flint into stone, this should give you 2 small flint pieces.\n\nMake a flint knife using those.\n\nThen use that knife to break grass to get fibers, those fibers will let you make plant string, which can be used to make a hatchet, the hatchet will allow you to gather wood and make a crafting table.\n\nUse JEI for the recipes if you are confused.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "minecraft:sand"
+            "id:8": "notreepunching:knife/flint"
           },
           "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Resource Gathering",
+          "name:8": "Basic Tools",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -81,16 +105,16 @@
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 256,
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "minecraft:cobblestone"
+              "id:8": "notreepunching:knife/flint"
             },
             "1:10": {
-              "Count:3": 32,
+              "Count:3": 3,
               "Damage:2": 0,
-              "OreDict:8": "logWood",
-              "id:8": "minecraft:log"
+              "OreDict:8": "",
+              "id:8": "notreepunching:grass_fiber"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -104,16 +128,16 @@
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 32,
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "minecraft:clay"
+              "id:8": "notreepunching:grass_string"
             },
             "1:10": {
-              "Count:3": 256,
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "minecraft:sand"
+              "id:8": "notreepunching:axe/flint"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -127,19 +151,19 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This big box will allow you to take coal and make it into coke, needed for steel production, this is also a much better fuel that coal, so it would be good idea to get some going",
+          "desc:8": "It\u0027s time to craft some tools!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 1017,
+            "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "gregtech:machine"
+            "id:8": "minecraft:crafting_table"
           },
           "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "IT\u0027S COKE COLA TIME",
+          "name:8": "It\u0027s Crafting Time!",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -151,6 +175,477 @@
         }
       },
       "questID:3": 2,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:crafting_table"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "notreepunching:pickaxe/flint"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "notreepunching:shovel/flint"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "3:10": {
+      "preRequisites:11": [
+        2
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "To get started in your journey you will first need to make a few things.\n\nTwo of them are the Coke Oven and the PBF, which stands for Primitive Blast Furnace.\n\nThe Coke Oven will allow you to make charcoal out of wood for an easy fuel source, although coal and charcoal can then be used to make coke in the Coke Oven (Crazy, right?).\n\nThis coke is not only a much better fuel than coal, but it will also allow you to make steel in a PBF later on, this requires machinery and resource you currently don\u0027t have.\n\nSo for now, go gather some resources for a Coke Oven.\n\n\n\n(Yes, you need around 216 sand and 128 clay, so get working)",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:clay"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Resource Gathering",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 3,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 216,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:sand"
+            },
+            "1:10": {
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:clay"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 128,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:clay_ball"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "4:10": {
+      "preRequisites:11": [
+        3
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The name says it.\n\nBesides converting coal to coke or wood logs to charcoal it will also produce creosote oil.\n\nThis oil can be used in a liquid fueled boiler to power your early steam desires, but that\u0027s for later.\n\n(Craft the hatch if you want to get ahead a little bit)",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1017,
+            "OreDict:8": "",
+            "id:8": "gregtech:machine"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Coke Oven",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 4,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 348,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            },
+            "1:10": {
+              "Count:3": 128,
+              "Damage:2": 350,
+              "OreDict:8": "",
+              "id:8": "gregtech:meta_item_1"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 26,
+              "Damage:2": 8,
+              "OreDict:8": "",
+              "id:8": "gregtech:metal_casing"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 1017,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 2,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 1018,
+              "OreDict:8": "",
+              "id:8": "gregtech:machine"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        }
+      }
+    },
+    "5:10": {
+      "preRequisites:11": [
+        0,
+        2
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "This isn\u0027t GTNH, go craft a bed and sleep a bit.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 14,
+            "OreDict:8": "",
+            "id:8": "minecraft:bed"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Are you sleepy?",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 5,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "OreDict:8": "",
+              "id:8": "minecraft:bed"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "6:10": {
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Oh but there is this.\n\nSpice of Life here isn\u0027t meant to be annoying or painful, it\u0027s meant to allow for more variety in what you do here early on.\n\nDon\u0027t worry, at the end of Steam Age you should be able to make a Healing Axe, for now just follow the \"Spice of Life\" quest chapter.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Spice of Life",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 6,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {},
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "7:10": {
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "New Quest",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 7,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "8:10": {
+      "preRequisites:11": [
+        4
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "A very important part of this pack is metallurgy, or the special processing some metals require.\n\nAs you progress the demand for resources increases, their production too.\n\nThere are dozens of steps you will need to expand as you go on to make sure your production of metals is up to the task, this includes making modular foundry\u0027s, ore refineries, blast furnaces (including the GT one) and more.\n\nAt the moment you will not need to make all of that, you could start right now (DON\u0027T, it\u0027s too hard and it hasn\u0027t even been implemented :trollface:), but just smelting your ores will be enough for now.\n\nFor more detailed progression refer to the Metallurgy tab",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:iron_ingot"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Metallurgy ",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 8,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:iron_ingot"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "9:10": {
+      "preRequisites:11": [
+        4
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No not yet.\n\nNow that you have made your first Coke Oven your good to go into Steam Age.\n\nNotice that there is still lots to do until you actually make steam machines and power, but what is next doesn\u0027t belong to stone age anymore.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Steam?",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 9,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "10:10": {
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "No Description",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:nether_star"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Tier 1 - Steam",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 10,
       "rewards:9": {},
       "tasks:9": {}
     }
@@ -186,14 +681,63 @@
           "id:3": 1,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 60,
+          "x:3": 36,
           "y:3": -12
         },
         "2:10": {
           "id:3": 2,
           "sizeX:3": 24,
           "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": -12
+        },
+        "3:10": {
+          "id:3": 3,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
           "x:3": 132,
+          "y:3": -12
+        },
+        "4:10": {
+          "id:3": 4,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 180,
+          "y:3": -12
+        },
+        "5:10": {
+          "id:3": 5,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 36,
+          "y:3": -72
+        },
+        "6:10": {
+          "id:3": 6,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": -72
+        },
+        "7:10": {
+          "id:3": 7,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -60,
+          "y:3": -72
+        },
+        "8:10": {
+          "id:3": 8,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 180,
+          "y:3": -72
+        },
+        "9:10": {
+          "id:3": 9,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 228,
           "y:3": -12
         }
       }
@@ -216,7 +760,15 @@
           "visibility:8": "NORMAL"
         }
       },
-      "quests:9": {}
+      "quests:9": {
+        "0:10": {
+          "id:3": 10,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": -12
+        }
+      }
     },
     "2:10": {
       "lineID:3": 2,
@@ -493,6 +1045,86 @@
             "id:8": "minecraft:book"
           },
           "name:8": "15 - MAX",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "quests:9": {}
+    },
+    "16:10": {
+      "lineID:3": 16,
+      "order:3": 16,
+      "properties:10": {
+        "betterquesting:10": {
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:book"
+          },
+          "name:8": "Thermodynamics",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "quests:9": {}
+    },
+    "17:10": {
+      "lineID:3": 17,
+      "order:3": 17,
+      "properties:10": {
+        "betterquesting:10": {
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:book"
+          },
+          "name:8": "Chemistry",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "quests:9": {}
+    },
+    "18:10": {
+      "lineID:3": 18,
+      "order:3": 18,
+      "properties:10": {
+        "betterquesting:10": {
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:book"
+          },
+          "name:8": "Programming",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "quests:9": {}
+    },
+    "19:10": {
+      "lineID:3": 19,
+      "order:3": 19,
+      "properties:10": {
+        "betterquesting:10": {
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "No Description",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:book"
+          },
+          "name:8": "Metallurgy",
           "visibility:8": "NORMAL"
         }
       },
