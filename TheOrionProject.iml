@@ -6,7 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/overrides/groovy/postInit" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/overrides/groovy/preInit" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="19" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="groovy-4.0.2" level="project" />
   </component>
 </module>
