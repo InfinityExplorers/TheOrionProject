@@ -9,6 +9,11 @@ crafting.remove("notreepunching:saw_planks_4")
 crafting.remove("notreepunching:saw_planks_5")
 crafting.remove("notreepunching:saw_planks_6")
 
+//Forestry
+
+//I have serious concerns over the person who thought adding this was a good idea.
+crafting.remove("forestry:bronze_ingot")
+
 //Added Recipes
 
 //Vanilla Crafting
